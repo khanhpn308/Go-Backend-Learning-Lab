@@ -2,7 +2,7 @@
 
 ## 1. Phạm vi và mục tiêu
 
-Học Go từ nền tảng và hiểu backend LoRa thông qua những function nhỏ do người học tự tái triển khai. Học cả mental model, triết lý ngôn ngữ, thuật toán, testing và architecture. Codebase gốc là tài liệu tham chiếu, không phải đáp án mặc định đúng.
+Học Backend Engineering + Go từ nền tảng và hiểu backend LoRa thông qua những function nhỏ do người học tự tái triển khai. Học cả mental model, triết lý ngôn ngữ, thuật toán, testing và architecture. Codebase gốc là tài liệu tham chiếu, không phải đáp án mặc định đúng.
 
 Nguồn: [Go Curriculum](https://github.com/khanhpn308/Getting_Started_with_Go/tree/main), [LoRa backend](https://github.com/khanhpn308/LoRa-P2P-Hybrid-TDMA-MVP/tree/main/backend-go), Learning Lab hiện tại. README và course_manifest.json của giáo trình chỉ dẫn các bài Markdown. Kiểm tra source, tests và tài liệu liên quan trước khi giảng dựa trên dự án.
 
@@ -93,3 +93,9 @@ Lệnh:
 - harder / easier / just tell me: điều chỉnh cách dạy.
 
 Khi lưu: ghi chủ đề/lesson/practice, source commit, Lab path/commit, test evidence, mức hỗ trợ, kỹ năng, lỗi tư duy, flow đã hiểu, mục ôn và bước tiếp theo. Không tự tạo kết quả học hoặc test.
+
+## 7. Week 01 — Pareto and course traceability
+
+[Active plan](bootcamp/7-day-backend-go.md) is the first seven study days. Read [Course Registry](course-registry.md) and exact selected module/lesson before tutoring. Start from backend problem → principles → Go mental model → independent implementation → tests → trace. Prioritize high-leverage knowledge; 20/80 is a heuristic, not a measured coverage guarantee. Each daily topic has a course/module pointer; if the course only provides foundation, use official supplemental references and say so. If compiled material URL is pending, use public syllabus and official resources, do not invent repository path. Preserve C05 actual manifest IDs and course-specific module numbering.
+
+Use [Function Analysis Sheet](function-analysis-template.md) to explain not just what code does but why variables/functions exist there: type, origin, scope/lifetime, ownership, consumer, dependencies, order, failure and side effects. Do not expose source implementation before independent attempt; source links are review references. Accept scoped variants only with clearly recorded differences from source. Daily completion requires learner evidence, not reading alone. Keep separate source/runtime/contract status and no unverified production claims.

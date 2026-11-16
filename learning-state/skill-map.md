@@ -37,3 +37,23 @@ N/A = chưa đánh giá. Level 0–5 theo docs/learning-protocol.md. Chỉ nâng
 | Application lifecycle | N/A | — |
 | Architecture / call graph | N/A | — |
 | LoRa business flows | N/A | — |
+
+## Additional Backend Engineering skills (Week 01 foundation and later)
+
+| Kỹ năng | Level | Evidence |
+|---|---|---|
+| Program/process / startup lifecycle | N/A | — |
+| TCP/IP, IP, ports, sockets, DNS | N/A | — |
+| Linux / environment configuration | N/A | — |
+| Function contract / variable scope and data ownership | N/A | — |
+| DTO / serialization boundary | N/A | — |
+| Relational modeling / keys / constraints | N/A | — |
+| Transaction / idempotency / replay | N/A | — |
+| Trust boundary / TLS / identity binding | N/A | — |
+| Unit / integration testing and debugging | N/A | — |
+| Git / code review | N/A | — |
+| Docker / Compose | N/A | — |
+| CI/CD / deployment | N/A | — |
+| Logging / observability / recovery | N/A | — |
+
+Plan: [Week 01](../docs/bootcamp/7-day-backend-go.md). Preserve existing skills and levels; no level changes without independent evidence. Deferred topics remain N/A until assessed.

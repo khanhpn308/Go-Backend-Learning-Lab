@@ -1,4 +1,6 @@
-# Learning Roadmap
+# Learning Roadmap — Long-term Direction
+
+**Active plan:** [Week 01 — Pareto 20/80](bootcamp/7-day-backend-go.md). [Course Registry](course-registry.md) maps courses/modules and learning materials. Week 01 is first, not a replacement for the long-term learning objectives. The earlier Go-first candidate sequence below is a reference pool, not the active day schedule.
 
 Lộ trình dự kiến, không phải checklist cố định. Bắt đầu bằng diagnostic; chưa có bằng chứng thì không tự gán level. Giáo trình [Getting Started with Go](https://github.com/khanhpn308/Getting_Started_with_Go/tree/main) là nguồn chính; bổ sung các chủ đề còn thiếu trước practice. Đọc source tại commit xác định khi giao bài.
 
@@ -33,4 +35,22 @@ Bổ sung function, method, interface, error handling, modules, testing, context
 - Hiểu domain, storage, MQTT, authentication, realtime và dependency boundaries qua từng flow.
 - Tự trace, debug và thiết kế thay đổi nhỏ có test/review trên branch riêng của LoRa.
 
-Không đặt thời hạn hay số bài hoàn thành nếu người học chưa thống nhất. Đánh giá khả năng vận dụng độc lập thay vì số lượng bài.
+Week 01 is agreed as seven study days; hours are a planning assumption. Beyond Week 01, use actual evidence to adjust duration. Đánh giá khả năng vận dụng độc lập thay vì số lượng bài.
+
+
+## Long-term reference (original 24-week roadmap)
+
+The user-supplied original plan has 8 phases. Retain direction, not a fixed calendar after the new Week 01. Detailed post-Week-01 module scheduling will be designed later, not expanded in this change.
+
+| Phase | Original schedule | Focus | Course IDs |
+|---|---|---|---|
+| P01 | Week 1 | Backend fundamentals | C01,C02,C03,C04,C11 |
+| P02 | Weeks 2–5 | Go core | C05,C06,C07 |
+| P03 | Weeks 6–8 | PostgreSQL/storage | C08,C09 |
+| P04 | Weeks 9–11 | MQTT/event processing | C15 + OASIS/HiveMQ/Mosquitto |
+| P05 | Weeks 12–14 | REST/WebSocket | C04 + Go docs |
+| P06 | Weeks 15–17 | Security/testing | C10,C16 |
+| P07 | Weeks 18–20 | Docker/Git/CI/CD | C11,C12,C13 |
+| P08 | Weeks 21–24 | Deployment/operations | C14 + official docs |
+
+The user supplied a full 24-week outline; this table preserves its phase sequence, not all lesson details. No certification, production release, or integration verification inferred.
