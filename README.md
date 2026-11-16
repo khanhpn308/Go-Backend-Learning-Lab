@@ -8,7 +8,7 @@ Learning Lab cá nhân học Backend Engineering + Go từ vấn đề hệ th�
 
 | Repository | Vai trò |
 |---|---|
-| [Getting Started with Go](https://github.com/khanhpn308/Getting_Started_with_Go/tree/main) | Giáo trình lý thuyết, bài học và mental models |
+| [Backend Engineering Materials](https://github.com/khanhpn308/Getting_Started_with_Go) | Thư viện học liệu chung; [C05 — Getting Started with Go](https://github.com/khanhpn308/Getting_Started_with_Go/tree/main/courses/C05_Getting_Started_with_Go) đã có 44 bài |
 | [LoRa Backend](https://github.com/khanhpn308/LoRa-P2P-Hybrid-TDMA-MVP/tree/main/backend-go) | Mã nguồn tham chiếu, tests, business rules và kiến trúc |
 | Repository này | Code tự viết, tests, review và trạng thái học |
 
@@ -20,7 +20,7 @@ Không sao chép toàn bộ codebase LoRa. Không sửa main của dự án gố
 - [Learning Protocol](docs/learning-protocol.md): Socratic Tutor, quy trình practice, source traceability và đánh giá.
 - [Testing Standards](docs/testing-standards.md): kiểm chứng hành vi, review, integration và failure modes.
 - [Week 01 — 7-day Backend + Go](docs/bootcamp/7-day-backend-go.md): kế hoạch ưu tiên hiện hành, Course → Module → Topic → Practice.
-- [Course Registry](docs/course-registry.md): nguồn đã có, placeholder tài liệu biên soạn và Coursera module chính xác.
+- [Course Registry](docs/course-registry.md): nguồn đã có trong [Materials catalog](https://github.com/khanhpn308/Getting_Started_with_Go/blob/main/courses_manifest.json), placeholder thư mục khóa học và Coursera module chính xác.
 - [Function Analysis Sheet](docs/function-analysis-template.md): mẫu phân tích function/variable/flow.
 - [Learning Roadmap](docs/roadmap.md): định hướng dài hạn, sau Week 01.
 - [Learning State](learning-state/README.md): cách lưu và tiếp tục phiên học.
