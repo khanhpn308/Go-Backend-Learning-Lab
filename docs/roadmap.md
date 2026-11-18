@@ -2,7 +2,7 @@
 
 **Active plan:** [Week 01 — Pareto 20/80](bootcamp/7-day-backend-go.md). [Course Registry](course-registry.md) maps courses/modules and learning materials. Week 01 is first, not a replacement for the long-term learning objectives. The earlier Go-first candidate sequence below is a reference pool, not the active day schedule.
 
-Lộ trình dự kiến, không phải checklist cố định. Bắt đầu bằng diagnostic; chưa có bằng chứng thì không tự gán level. Giáo trình [Getting Started with Go](https://github.com/khanhpn308/Getting_Started_with_Go/tree/main/courses/C05_Getting_Started_with_Go) là nguồn chính; bổ sung các chủ đề còn thiếu trước practice. Đọc source tại commit xác định khi giao bài.
+Lộ trình dự kiến, không phải checklist cố định. Bắt đầu bằng diagnostic; chưa có bằng chứng thì không tự gán level. Giáo trình [Getting Started with Go](https://github.com/khanhpn308/Backend-Engineering-Materials/tree/main/courses/C05_Getting_Started_with_Go) là nguồn chính; bổ sung các chủ đề còn thiếu trước practice. Đọc source tại commit xác định khi giao bài.
 
 | Giai đoạn | Go / backend | Practice ứng viên từ LoRa |
 |---|---|---|

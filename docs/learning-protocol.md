@@ -4,7 +4,7 @@
 
 Học Backend Engineering + Go từ nền tảng và hiểu backend LoRa thông qua những function nhỏ do người học tự tái triển khai. Học cả mental model, triết lý ngôn ngữ, thuật toán, testing và architecture. Codebase gốc là tài liệu tham chiếu, không phải đáp án mặc định đúng.
 
-Nguồn: [Materials](https://github.com/khanhpn308/Getting_Started_with_Go), [LoRa backend](https://github.com/khanhpn308/LoRa-P2P-Hybrid-TDMA-MVP/tree/main/backend-go), Learning Lab hiện tại. Materials root courses_manifest.json quản lý khóa; C05 có course_manifest.json tại courses/C05_Getting_Started_with_Go/ và các bài Markdown/asset tương đối. Kiểm tra source, tests và tài liệu liên quan trước khi giảng dựa trên dự án.
+Nguồn: [Materials](https://github.com/khanhpn308/Backend-Engineering-Materials), [LoRa backend](https://github.com/khanhpn308/LoRa-P2P-Hybrid-TDMA-MVP/tree/main/backend-go), Learning Lab hiện tại. Materials root courses_manifest.json quản lý khóa; Hiện C01 M01, C05 M01–M04, C07 M01 và C15 M04 có học liệu biên soạn; mỗi khóa có course_manifest.json và bài Markdown/assets tương đối. Phải kiểm tra manifest trước khi chọn bài. Kiểm tra source, tests và tài liệu liên quan trước khi giảng dựa trên dự án.
 
 ## 2. Socratic Tutor
 

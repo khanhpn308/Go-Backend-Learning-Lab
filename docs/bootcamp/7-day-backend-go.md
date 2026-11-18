@@ -10,14 +10,17 @@ Pareto selects high-leverage concepts, not a measured claim of 80% code coverage
 
 ## Source baseline and study instructions
 
-- [Course registry](../course-registry.md): maps Course/Module IDs to the [shared Materials catalog](https://github.com/khanhpn308/Getting_Started_with_Go/blob/main/courses_manifest.json), the existing C05 course directory and TODO placeholders for future compiled course folders.
-- [Go manifest](https://github.com/khanhpn308/Getting_Started_with_Go/blob/main/courses/C05_Getting_Started_with_Go/course_manifest.json): C05 lesson IDs are actual repository IDs; they differ from lecture labels. Read selected files before teaching.
+- [Course registry](../course-registry.md): maps Course/Module IDs to the [shared Materials catalog](https://github.com/khanhpn308/Backend-Engineering-Materials/blob/main/courses_manifest.json), the compiled C01 M01, C05 M01–M04, C07 M01, C15 M04 and TODO placeholders for other courses/modules.
+- Newly available: [C01 M01](https://github.com/khanhpn308/Backend-Engineering-Materials/tree/main/courses/C01_Introduction_to_Backend_Development/Module_01_Get_started_with_web_development) (34 lessons), [C07 M01](https://github.com/khanhpn308/Backend-Engineering-Materials/tree/main/courses/C07_Concurrency_in_Go/Module_01_Why_Use_Concurrency) (9 lessons), [C15 M04](https://github.com/khanhpn308/Backend-Engineering-Materials/tree/main/courses/C15_MQTT/Module_04_MQTT_Basics) (12 lessons). **C07 M02–M04 are not compiled**; use Coursera + [Go docs](https://go.dev/doc/) for those. Course-level AVAILABLE ≠ complete course.
+- [Go manifest](https://github.com/khanhpn308/Backend-Engineering-Materials/blob/main/courses/C05_Getting_Started_with_Go/course_manifest.json): C05 lesson IDs are actual repository IDs; they differ from lecture labels. Read selected files before teaching.
 - LoRa repo: https://github.com/khanhpn308/LoRa-P2P-Hybrid-TDMA-MVP, pinned commit [aec70071774e0eb2607eaea8d297d11782ad9c05](https://github.com/khanhpn308/LoRa-P2P-Hybrid-TDMA-MVP/commit/aec70071774e0eb2607eaea8d297d11782ad9c05). The links below are static source/test references; no tests executed. Recheck at practice assignment and use this pin unless a deliberate rebaseline is recorded.
 - [Architecture](https://github.com/khanhpn308/LoRa-P2P-Hybrid-TDMA-MVP/blob/aec70071774e0eb2607eaea8d297d11782ad9c05/docs/architecture/system-overview.md), [interfaces](https://github.com/khanhpn308/LoRa-P2P-Hybrid-TDMA-MVP/blob/aec70071774e0eb2607eaea8d297d11782ad9c05/docs/architecture/interfaces.md), [MQTT topics](https://github.com/khanhpn308/LoRa-P2P-Hybrid-TDMA-MVP/blob/aec70071774e0eb2607eaea8d297d11782ad9c05/contracts/mqtt/topics.md), [Join Hello draft schema](https://github.com/khanhpn308/LoRa-P2P-Hybrid-TDMA-MVP/blob/aec70071774e0eb2607eaea8d297d11782ad9c05/contracts/mqtt/schemas/join-hello.schema.json), [OpenAPI draft](https://github.com/khanhpn308/LoRa-P2P-Hybrid-TDMA-MVP/blob/aec70071774e0eb2607eaea8d297d11782ad9c05/contracts/api/openapi.yaml). The design direction is not evidence of implementation or integration. Backend README still says scaffold; code contains handlers, storage and wiring. Distinguish target, source and verified runtime.
 - [go.mod](https://github.com/khanhpn308/LoRa-P2P-Hybrid-TDMA-MVP/blob/aec70071774e0eb2607eaea8d297d11782ad9c05/backend-go/go.mod) declares Go 1.27.3 at this baseline. Verify `go version` and Lab module locally; do not automatically change production Go/dependencies or download toolchains. C05 older examples are conceptual references, not necessarily current API best practice.
 - Before each practice: read protocol and testing standards; source/tests/contracts and callers; provide signature/contract and tests without full implementation. Source links are tutor/reviewer references; learner opens implementation only after independent attempt unless explicitly requesting it. Never use real credentials, keys or production database/broker.
 
 ## Day 1 — W01-D01: Process, startup, package, variables and functions
+
+Available compiled materials: [C01 M01](https://github.com/khanhpn308/Backend-Engineering-Materials/tree/main/courses/C01_Introduction_to_Backend_Development/Module_01_Get_started_with_web_development), [C05 modules](https://github.com/khanhpn308/Backend-Engineering-Materials/tree/main/courses/C05_Getting_Started_with_Go). **C07 M02 (Processes) not yet compiled**; use Coursera or technical references, not C07 M01 as a substitute.
 
 Question: Backend starts from where? Why separate configuration, app construction and execution?
 
@@ -39,6 +42,8 @@ Trace: [main.go](https://github.com/khanhpn308/LoRa-P2P-Hybrid-TDMA-MVP/blob/aec
 - Completion: runnable small program, actual test evidence, explain startup vs helper and data origin. Do not assert a production caller for builder without inspecting call sites.
 
 ## Day 2 — W01-D02: Networking, MQTT, string parsing and errors
+
+Available compiled material: [C15 M04 — MQTT Basics](https://github.com/khanhpn308/Backend-Engineering-Materials/tree/main/courses/C15_MQTT/Module_04_MQTT_Basics). C02 M01–M04 still await compilation; use Coursera/official sources.
 
 Question: Why reject malformed network data before using a Gateway ID?
 
@@ -141,6 +146,8 @@ Question: Why separate business orchestration from database queries and transact
 - Completion: explain query and interface, write and test scoped lookup, record fake/integration scope honestly.
 
 ## Day 7 — W01-D07: Independent transfer and Join Hello reverse engineering
+
+C07 M02–M04 remain pending compiled material; their Coursera references are selective background, not a prerequisite requiring a fabricated local lesson.
 
 Question: How do data, dependencies, and validation travel through a larger handler, and why in this order?
 
