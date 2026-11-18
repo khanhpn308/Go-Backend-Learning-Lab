@@ -1,19 +1,21 @@
 # Course Registry — Backend Engineering + Go
 
-Updated: 2026-11-17. IDs C01–C14 preserve the original 24-week roadmap; C15–C16 are supplemental selections for Week 01. Course IDs are stable local IDs; module numbers and English titles follow Coursera. Module IDs are scoped by Course ID (C05 M01 is different from C06 M01).
+Updated: 2026-11-18. IDs C01–C14 preserve the original 24-week roadmap; C15–C16 are supplemental selections for Week 01. Course IDs are stable local IDs; module numbers and English titles follow Coursera. Module IDs are scoped by Course ID (C05 M01 is different from C06 M01).
 
 ## Consolidated Materials repository
 
-- [Backend Engineering Materials](https://github.com/khanhpn308/Getting_Started_with_Go) — repository cấu trúc chung; tên repository trên GitHub vẫn là Getting_Started_with_Go cho đến khi owner hoàn tất Settings rename.
-- [courses_manifest.json](https://github.com/khanhpn308/Getting_Started_with_Go/blob/main/courses_manifest.json) — danh mục C01–C16, `AVAILABLE` chỉ với C05; khóa khác là `PLANNED` và `directory=null`.
-- [C05 course directory](https://github.com/khanhpn308/Getting_Started_with_Go/tree/main/courses/C05_Getting_Started_with_Go) · [C05 manifest](https://github.com/khanhpn308/Getting_Started_with_Go/blob/main/courses/C05_Getting_Started_with_Go/course_manifest.json). C05 internal module and lesson IDs remain unchanged.
+- [Backend Engineering Materials](https://github.com/khanhpn308/Backend-Engineering-Materials) — tên repository chính thức đã đổi, sử dụng URL mới.
+- [courses_manifest.json](https://github.com/khanhpn308/Backend-Engineering-Materials/blob/main/courses_manifest.json) — danh mục C01–C16; `AVAILABLE` gồm C01 (M01), C05 (M01–M04), C07 (M01), C15 (M04). Các khóa khác `PLANNED` với `directory=null`.
+- [C01 M01](https://github.com/khanhpn308/Backend-Engineering-Materials/tree/main/courses/C01_Introduction_to_Backend_Development/Module_01_Get_started_with_web_development) · [C07 M01](https://github.com/khanhpn308/Backend-Engineering-Materials/tree/main/courses/C07_Concurrency_in_Go/Module_01_Why_Use_Concurrency) · [C15 M04](https://github.com/khanhpn308/Backend-Engineering-Materials/tree/main/courses/C15_MQTT/Module_04_MQTT_Basics) là các module mới đã được import. C07 M02/M03/M04 còn thiếu, dù được nhắc trong roadmap.
+- [C05 course directory](https://github.com/khanhpn308/Backend-Engineering-Materials/tree/main/courses/C05_Getting_Started_with_Go) · [C05 manifest](https://github.com/khanhpn308/Backend-Engineering-Materials/blob/main/courses/C05_Getting_Started_with_Go/course_manifest.json). C05 internal module and lesson IDs remain unchanged.
 - `TODO_Cxx_COURSE_PATH` denotes a future directory **in this shared Materials repo**, not a separate repository; do not invent URL for planned courses.
 
 ## Source status and lookup
 
-- AVAILABLE: repository and index inspected; use its actual file paths and lesson IDs.
+- AVAILABLE: repository, course manifest và ít nhất một module đã được xác minh; **không** đồng nghĩa có toàn bộ Coursera course hoặc đã qua human review. Chỉ dùng module liệt kê trong materials manifest.
 - PENDING_USER_MATERIAL: no compiled course directory / module paths verified yet in shared Materials repo. Placeholder remains plain text. Use Coursera plus official references until material is added.
 - DEFERRED: no Week 01 study requirement; module mapping can be verified when its phase is planned.
+- Courses with partial coverage: C01 only M01, C07 only M01, C15 only M04. Other modules remain uncompiled regardless of course-level AVAILABLE status.
 - These are material availability states, not course completion states. All learning/assessment states remain unassessed until evidence exists.
 - Coursera public syllabus links below are course-level links; the Mxx and exact module title identify the module even if login or URL routes change. No private course content or enrollment/access is claimed.
 - When user adds a course directory to Materials, verify README, manifest, module order and actual paths; replace only the corresponding placeholder. Preserve original Coursera module numbers; do not invent lesson IDs. Prefer compiled Vietnamese material for selected lessons; check against official references and current contracts.
@@ -23,13 +25,13 @@ Updated: 2026-11-17. IDs C01–C14 preserve the original 24-week roadmap; C15–
 
 | ID | Course / provider | User-compiled source | Week 01 usage |
 |---|---|---|---|
-| C01 | [Introduction to Back-End Development](https://www.coursera.org/learn/introduction-to-back-end-development) — Meta | `TODO_C01_COURSE_PATH` (PENDING_USER_MATERIAL) | W01 D1, D5 |
+| C01 | [Introduction to Back-End Development](https://www.coursera.org/learn/introduction-to-back-end-development) — Meta | [Materials C01](https://github.com/khanhpn308/Backend-Engineering-Materials/tree/main/courses/C01_Introduction_to_Backend_Development) · [Manifest](https://github.com/khanhpn308/Backend-Engineering-Materials/blob/main/courses/C01_Introduction_to_Backend_Development/course_manifest.json) — AVAILABLE M01 (34 lessons) | W01 D1, D5 |
 | C02 | [The Bits and Bytes of Computer Networking](https://www.coursera.org/learn/computer-networking) — Google | `TODO_C02_COURSE_PATH` (PENDING_USER_MATERIAL) | W01 D1–D2 |
 | C03 | [Introduction to Software Engineering](https://www.coursera.org/learn/introduction-to-software-engineering) — IBM | `TODO_C03_COURSE_PATH` (PENDING_USER_MATERIAL) | W01 D1, D3, D6–D7 |
 | C04 | [APIs](https://www.coursera.org/learn/apis) — Meta | `TODO_C04_COURSE_PATH` (PENDING_USER_MATERIAL) | W01 D4–D5; concepts only, Go replaces Django |
-| C05 | [Getting Started with Go](https://www.coursera.org/learn/golang-getting-started) — University of California, Irvine | [Materials C05](https://github.com/khanhpn308/Getting_Started_with_Go/tree/main/courses/C05_Getting_Started_with_Go) · [Manifest](https://github.com/khanhpn308/Getting_Started_with_Go/blob/main/courses/C05_Getting_Started_with_Go/course_manifest.json) (AVAILABLE) | W01 D1–D7 |
+| C05 | [Getting Started with Go](https://www.coursera.org/learn/golang-getting-started) — University of California, Irvine | [Materials C05](https://github.com/khanhpn308/Backend-Engineering-Materials/tree/main/courses/C05_Getting_Started_with_Go) · [Manifest](https://github.com/khanhpn308/Backend-Engineering-Materials/blob/main/courses/C05_Getting_Started_with_Go/course_manifest.json) (AVAILABLE) | W01 D1–D7 |
 | C06 | [Functions, Methods, and Interfaces in Go](https://www.coursera.org/learn/golang-functions-methods) — University of California, Irvine | `TODO_C06_COURSE_PATH` (PENDING_USER_MATERIAL) | W01 D1–D7 |
-| C07 | [Concurrency in Go](https://www.coursera.org/learn/golang-concurrency) — University of California, Irvine | `TODO_C07_COURSE_PATH` (PENDING_USER_MATERIAL) | W01 D1/D7 selected; deeper concurrency later |
+| C07 | [Concurrency in Go](https://www.coursera.org/learn/golang-concurrency) — University of California, Irvine | [Materials C07](https://github.com/khanhpn308/Backend-Engineering-Materials/tree/main/courses/C07_Concurrency_in_Go) · [Manifest](https://github.com/khanhpn308/Backend-Engineering-Materials/blob/main/courses/C07_Concurrency_in_Go/course_manifest.json) — AVAILABLE M01 (9 lessons); M02–M04 pending | W01 D1/D7 selected; deeper concurrency later |
 | C08 | [Database Design and Basic SQL in PostgreSQL](https://www.coursera.org/learn/database-design-postgresql) — University of Michigan | `TODO_C08_COURSE_PATH` (PENDING_USER_MATERIAL) | W01 D6 |
 | C09 | [Intermediate PostgreSQL](https://www.coursera.org/learn/intermediate-postgresql) — University of Michigan | `TODO_C09_COURSE_PATH` (PENDING_USER_MATERIAL) | W01 D6 transaction introduction |
 | C10 | [Application Security for Developers and DevOps Professionals](https://www.coursera.org/learn/application-security-for-developers-devops) — IBM | `TODO_C10_COURSE_PATH` (PENDING_USER_MATERIAL) | W01 D2, D4, D7 selected |
@@ -37,7 +39,7 @@ Updated: 2026-11-17. IDs C01–C14 preserve the original 24-week roadmap; C15–
 | C12 | [Introduction to Git and GitHub](https://www.coursera.org/learn/introduction-git-github) — Google | `TODO_C12_COURSE_PATH` (PENDING_USER_MATERIAL) | After W01 deeper; Git basics as tool only |
 | C13 | [Continuous Integration and Continuous Delivery (CI/CD)](https://www.coursera.org/learn/continuous-integration-and-continuous-delivery-ci-cd) — IBM | `TODO_C13_COURSE_PATH` (PENDING_USER_MATERIAL) | After W01 |
 | C14 | [Introduction to Cloud Computing](https://www.coursera.org/learn/introduction-to-cloud) — IBM | `TODO_C14_COURSE_PATH` (PENDING_USER_MATERIAL) | After W01; optional |
-| C15 | [Node-RED: IoT projects with ESP32, MQTT and Docker](https://www.coursera.org/learn/packt-node-red-iot-projects-with-esp32-mqtt-and-docker) — Packt | `TODO_C15_COURSE_PATH` (PENDING_USER_MATERIAL) | Supplement W01 D2, D7; MQTT theory only, no Node-RED/firmware |
+| C15 | [Node-RED: IoT projects with ESP32, MQTT and Docker](https://www.coursera.org/learn/packt-node-red-iot-projects-with-esp32-mqtt-and-docker) — Packt | [Materials C15](https://github.com/khanhpn308/Backend-Engineering-Materials/tree/main/courses/C15_MQTT) · [Manifest](https://github.com/khanhpn308/Backend-Engineering-Materials/blob/main/courses/C15_MQTT/course_manifest.json) — AVAILABLE M04 (12 lessons) | Supplement W01 D2, D7; MQTT theory only, no Node-RED/firmware |
 | C16 | [Unit Testing & Test-Driven Development](https://www.coursera.org/learn/unit-testing-test-driven-development) — Coursera supplementary course | `TODO_C16_COURSE_PATH` (PENDING_USER_MATERIAL) | Supplement W01 D1–D7; concepts applied using Go testing |
 
 ## Module catalog
@@ -46,9 +48,11 @@ Updated: 2026-11-17. IDs C01–C14 preserve the original 24-week roadmap; C15–
 
 Coursera: https://www.coursera.org/learn/introduction-to-back-end-development
 
-Material directory: `TODO_C01_COURSE_PATH`
+Material directory: https://github.com/khanhpn308/Backend-Engineering-Materials/tree/main/courses/C01_Introduction_to_Backend_Development
 
-- M01 — Get started with web development · material: `TODO_C01_M01_PATH`
+Manifest: https://github.com/khanhpn308/Backend-Engineering-Materials/blob/main/courses/C01_Introduction_to_Backend_Development/course_manifest.json
+
+- M01 — Get started with web development · [Vietnamese module (34 lessons)](https://github.com/khanhpn308/Backend-Engineering-Materials/tree/main/courses/C01_Introduction_to_Backend_Development/Module_01_Get_started_with_web_development) — AVAILABLE
 
 ### C02 — The Bits and Bytes of Computer Networking
 
@@ -84,14 +88,14 @@ Material directory: `TODO_C04_COURSE_PATH`
 
 Coursera: https://www.coursera.org/learn/golang-getting-started
 
-Material directory: https://github.com/khanhpn308/Getting_Started_with_Go/tree/main/courses/C05_Getting_Started_with_Go
+Material directory: https://github.com/khanhpn308/Backend-Engineering-Materials/tree/main/courses/C05_Getting_Started_with_Go
 
-Manifest: https://github.com/khanhpn308/Getting_Started_with_Go/blob/main/courses/C05_Getting_Started_with_Go/course_manifest.json
+Manifest: https://github.com/khanhpn308/Backend-Engineering-Materials/blob/main/courses/C05_Getting_Started_with_Go/course_manifest.json
 
-- M01 — Getting Started with Go Programming · [Vietnamese module](https://github.com/khanhpn308/Getting_Started_with_Go/tree/main/courses/C05_Getting_Started_with_Go/Module_01_Getting_Started_with_Go_Programming)
-- M02 — Basic Data Types · [Vietnamese module](https://github.com/khanhpn308/Getting_Started_with_Go/tree/main/courses/C05_Getting_Started_with_Go/Module_02_Basic_Data_Types)
-- M03 — Composite Data Types · [Vietnamese module](https://github.com/khanhpn308/Getting_Started_with_Go/tree/main/courses/C05_Getting_Started_with_Go/Module_03_Composite_Data_Types)
-- M04 — Protocols and Formats · [Vietnamese module](https://github.com/khanhpn308/Getting_Started_with_Go/tree/main/courses/C05_Getting_Started_with_Go/Module_04_Protocols_and_Formats)
+- M01 — Getting Started with Go Programming · [Vietnamese module](https://github.com/khanhpn308/Backend-Engineering-Materials/tree/main/courses/C05_Getting_Started_with_Go/Module_01_Getting_Started_with_Go_Programming)
+- M02 — Basic Data Types · [Vietnamese module](https://github.com/khanhpn308/Backend-Engineering-Materials/tree/main/courses/C05_Getting_Started_with_Go/Module_02_Basic_Data_Types)
+- M03 — Composite Data Types · [Vietnamese module](https://github.com/khanhpn308/Backend-Engineering-Materials/tree/main/courses/C05_Getting_Started_with_Go/Module_03_Composite_Data_Types)
+- M04 — Protocols and Formats · [Vietnamese module](https://github.com/khanhpn308/Backend-Engineering-Materials/tree/main/courses/C05_Getting_Started_with_Go/Module_04_Protocols_and_Formats)
 
 ### C06 — Functions, Methods, and Interfaces in Go
 
@@ -108,12 +112,14 @@ Material directory: `TODO_C06_COURSE_PATH`
 
 Coursera: https://www.coursera.org/learn/golang-concurrency
 
-Material directory: `TODO_C07_COURSE_PATH`
+Material directory: https://github.com/khanhpn308/Backend-Engineering-Materials/tree/main/courses/C07_Concurrency_in_Go
 
-- M01 — Why Use Concurrency? · material: `TODO_C07_M01_PATH`
-- M02 — Concurrency Basics · material: `TODO_C07_M02_PATH`
-- M03 — Threads in Go · material: `TODO_C07_M03_PATH`
-- M04 — Synchronized Communication · material: `TODO_C07_M04_PATH`
+Manifest: https://github.com/khanhpn308/Backend-Engineering-Materials/blob/main/courses/C07_Concurrency_in_Go/course_manifest.json
+
+- M01 — Why Use Concurrency? · [Vietnamese module (9 lessons)](https://github.com/khanhpn308/Backend-Engineering-Materials/tree/main/courses/C07_Concurrency_in_Go/Module_01_Why_Use_Concurrency) — AVAILABLE
+- M02 — Concurrency Basics · material: `TODO_C07_M02_PATH` (**not yet compiled**; use Coursera / official references)
+- M03 — Threads in Go · material: `TODO_C07_M03_PATH` (**not yet compiled**)
+- M04 — Synchronized Communication · material: `TODO_C07_M04_PATH` (**not yet compiled**)
 
 ### C08 — Database Design and Basic SQL in PostgreSQL
 
@@ -178,9 +184,11 @@ DEFERRED — verify exact module titles and paths before activating; no Week 01 
 
 Coursera: https://www.coursera.org/learn/packt-node-red-iot-projects-with-esp32-mqtt-and-docker
 
-Material directory: `TODO_C15_COURSE_PATH`
+Material directory: https://github.com/khanhpn308/Backend-Engineering-Materials/tree/main/courses/C15_MQTT
 
-- M04 — MQTT Basics · material: `TODO_C15_M04_PATH`
+Manifest: https://github.com/khanhpn308/Backend-Engineering-Materials/blob/main/courses/C15_MQTT/course_manifest.json
+
+- M04 — MQTT Basics · [Vietnamese module (12 lessons)](https://github.com/khanhpn308/Backend-Engineering-Materials/tree/main/courses/C15_MQTT/Module_04_MQTT_Basics) — AVAILABLE
 
 ### C16 — Unit Testing & Test-Driven Development
 

@@ -6,8 +6,8 @@ Dạy Backend Engineering + Go từ nền tảng: networking, HTTP, MQTT, databa
 
 ## Nguồn GitHub và học liệu
 
-1. Thư viện học liệu Backend Engineering Materials: https://github.com/khanhpn308/Getting_Started_with_Go
-Đọc courses_manifest.json ở root → course_manifest.json của khóa đang học → bài học cần thiết. C05 nằm trong courses/C05_Getting_Started_with_Go/; không giả định các khóa PLANNED đã có folder.
+1. Thư viện học liệu Backend Engineering Materials: https://github.com/khanhpn308/Backend-Engineering-Materials
+Đọc courses_manifest.json ở root → course_manifest.json của khóa đang học → bài học cần thiết. Hiện C01 M01, C05 M01–M04, C07 M01 và C15 M04 có tài liệu; module khác phải kiểm tra trạng thái, không đoán đã có.
 2. Backend LoRa tham chiếu: https://github.com/khanhpn308/LoRa-P2P-Hybrid-TDMA-MVP/tree/main/backend-go
 Đọc mã nguồn, tests, tài liệu nghiệp vụ và kiến trúc trước khi tạo practice. Không đoán hành vi function.
 3. Learning Lab: https://github.com/khanhpn308/Go-Backend-Learning-Lab
